@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="../images/icons8-marker-s-50 (1).png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            list-style: none;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        
+        :root{
+            --bg-color: #020312;
+            --text-color: #fff;
+            --main-color: #eb4a4a;
+            --second-color: gray;
+            --other-color: #12141c;
+            --h1-font: 5.2rem;
+            --h2-font: 3.5rem;
+            --p-font: 1.1rem;
+        }
+        body{
+            background: #191919;
+            color: var(--text-color);
+        }
+        .hero{
+            height: 100vh;
+            width: 100%;
+            background: #191919;
+          }
+          nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 2%;
+            padding-left: 2%;
+          }
+          .logo{
+            color: #262728;
+            font-size: 35px;
+            letter-spacing: 1px;
+            cursor: pointer;
+          }
+          nav ul{
+            flex: 1;
+            text-align: right;
+          }
+          nav ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 0px 25px;
+          }
+          nav ul li a{
+            color: #262728;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: bold;
+          }
+          nav ul li a:hover{
+            color: #f9004d;
+            transition: .3s;
+            font-size: 23px;
+          }
+          .btn{
+            background: transparent;
+            border: 2px solid #262728;
+            padding: 12px 25px;
+            color: #262728;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-left: 80px;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .btn:hover{
+            background:#262728;
+            color: white;
+            transition: .3s;
+          }
+          header{
+            width: 92%;
+            margin: 0 auto;
+            padding: 13px 0;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            border-radius: 50px;
+            z-index: 2;
+            background: white;
+            box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+          }
+          .about{
+            width: 100%;
+            padding: 100px 0px;
+            background-color: #191919;
+            margin-top: 30px;
+
+        }
+        .about img{
+            height: 90%;
+            width: 430px;
+            margin-top: 30px;
+            border-radius: 40%;
+        }
+        .about-text{
+            width: 600px;
+            margin-left: 50px;
+        }
+        .main{
+            width: 1130px;
+            max-width: 95%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .about-text h2{
+            color: white;
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .about-text h5{
+            color: white;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+        }
+        .about-text p{
+            color: #fcfc;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+        button{
+            background-color:#f9004d;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s; 
+            margin-top: 30px;
+        }
+        button:hover{
+            background-color: transparent;
+            border: 2px solid #f9004d;
+            cursor: pointer;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="hero">
+            <header>
+              <nav>
+                <h2 class="logo"> こんにちは!</h2>
+                <ul>
+                  <li ><a href="../index.html">Home</a></li>
+                  <li><a href="aboutme.html">About Me</a></li>
+                  <li><a href="education.html">Education</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="btn">Download CV</a>
+              </nav>
+            </header>
+            <section class="about">
+              <div class="main">
+                <img src="../images/photo_2022-11-15_20-34-25.jpg">
+                <div class="about-text">
+                  <h2>About Me</h2>
+                  <h5>A Learner<span> & an Aspirer</span></h5>
+                  <p>I'm a normal person who likes to have a balance in everything.<br>I'm very much interested in travelling and exploring new places<br>that I pretty much turn every table to achieve it.<br>
+                    <p>Healthy mind in an healthy body.<br>Since the last two years, sports has become a part of my curriculum.I'd hit the gym almost everyday, play badminton<br>on rest days and eat well all the time.</p>
+                    <p></p>
+                    <a href="contact.html"><button type="button">Let's Talk</button></a>
+                </div>
+              </div>
+            </section>
+          
+    </body>

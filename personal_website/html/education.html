@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Education</title>
+  <link rel="icon" type="image/x-icon" href="../images/icons8-marker-s-50 (1).png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            list-style: none;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        
+        :root{
+            --bg-color: ##02;
+            --text-color: #fff;
+            --main-color: #eb4a4a;
+            --second-color: gray;
+            --other-color: #12141c;
+            --h1-font: 5.2rem;
+            --h2-font: 3.5rem;
+            --p-font: 1.1rem;
+        }
+        body{
+            background: #191919;
+            color: var(--text-color);
+        }
+        .hero{
+            height: 100vh;
+            width: 100%;
+            background: #191919;
+          }
+          nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 2%;
+            padding-left: 2%;
+          }
+          .logo{
+            color: #262728;
+            font-size: 35px;
+            letter-spacing: 1px;
+            cursor: pointer;
+          }
+          nav ul{
+            flex: 1;
+            text-align: right;
+          }
+          nav ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 0px 25px;
+          }
+          nav ul li a{
+            color: #262728;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: bold;
+          }
+          nav ul li a:hover{
+            color: #f9004d;
+            transition: .3s;
+            font-size: 23px;
+          }
+          .btn{
+            background: transparent;
+            border: 2px solid #262728;
+            padding: 12px 25px;
+            color: #262728;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-left: 80px;
+            font-size: 17px;
+            font-weight: bold;
+          }
+          .btn:hover{
+            background:#262728;
+            color: white;
+            transition: .3s;
+          }
+          header{
+            width: 92%;
+            margin: 0 auto;
+            padding: 13px 0;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            border-radius: 50px;
+            z-index: 2;
+            background: white;
+            box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+          }
+          .service{
+            background: #101010;
+            width: 100%;
+            padding: 100px 0px;
+            margin-bottom: -200px;;
+        }
+        .title h2{
+          
+            color: white;
+            font-size: 75px;
+            width: 1130px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+        }
+        .card{
+            height: 365px;
+            width: 335px;
+            padding: 20px 35px;
+            background: #191919;
+            border-radius: 20px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .card i{
+            font-size: 50px;
+            display: block;
+            text-align: center;
+            margin: 25px 0px;
+            color: #f9004d;
+        
+        }
+        h5{
+            color: white;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+        .pra p{
+            color: #fcfc;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 25px;
+        }
+        .card .button{
+            background-color:#f9004d;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 9px 22px;
+            border-radius: 30px;
+            transition: .4s; 
+        }
+        .card .button:hover{
+            background-color: transparent;
+            border: 2px solid #f9004d;
+            cursor: pointer;
+        }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <header>
+              <nav>
+                <h2 class="logo">こんにちは!</h2>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="Aboutme.html">About Me</a></li>
+                  <li><a href="Education.html">Education</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="btn">Download CV</a>
+              </nav>
+            </header>
+
+            <div class="service">
+              <div class="title">
+                  <h2>Education</h2>
+              </div>
+      
+              <div class="box">
+                  <div class="card">
+                      <i class="fas fa-book-reader"></i>
+                      <h5>Schooling</h5>
+                      <div class="pra">
+                          <p>Upto grade 10, studied in SAV, Trichy.<br>Finished 11th and 12th grade in Paavai Vidhyashram,Namakkal.<br></p>
+                      </div>
+                  </div>
+      
+                  <div class="card">
+                      <i class="fas fa-user-graduate"></i>
+                      <h5>College</h5>
+                      <div class="pra">
+                          <p>Currently pursuing B.tech Cyber Security, 2nd year in<br>Amrita Vishwa Vidyapeetam<br>Coimbatore.</p>
+      
+                          
+                      </div>
+                  </div>
+      
+                  <div class="card">
+                      <i class="fa fa-desktop"></i>
+                      <h5>Online Courses</h5>
+                      <div class="pra">
+                          <p>Currently learning React.Javascript.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="service">
+            <div class="title">
+                <h2>Skills</h2>
+            </div>
+    
+            <div class="box">
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>Web Development</h5>
+                    <div class="pra">
+                        <p>Proficient with HTML,CSS and JAVASCRIPT<br>
+                        Currently learning REACT.JS</p>
+    
+                        
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <i class="far fa-user"></i>
+                    <h5>Programming Languages</h5>
+                    <div class="pra">
+                        <p>Finished courses in C, Python.<br>
+                          Currently learning C++ </p>
+    
+                        
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <i class="fa fa-bell"></i>
+                    <h5>Languages</h5>
+                    <div class="pra">
+                        <p>Highly Fluent in</p><ul><li>Tamil</li><li>English</li><li>Hindi</li></ul>Japanese (learning)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    
